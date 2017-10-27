@@ -82,10 +82,9 @@
 
       #logo2{
         position:absolute;
-        left:0;
         top:0;
         max-height:10vh;
-        
+        margin:auto;
         z-index:999;
       }
 
@@ -113,7 +112,7 @@
         position:absolute;
         z-index:500;
         top:220px !important;
-        left:15vw !important; 
+        Left:15vw !important; 
         height:auto !important;
     }
 
@@ -129,12 +128,12 @@
 
 
 .logo-1 img{ 
-    max-width:20vw;
+    max-width:130px;
     position:absolute;
     z-index:500;
     top:326px;
     left:25px; 
-    height:20vh;
+    height:130px;
 }
 
 .hero-text h1{
