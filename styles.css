@@ -8,8 +8,7 @@
 .topnav {
     position: relative;
     z-index:997;
-    background-color: rgb(66, 66, 78);
-    opacity:0.7;
+    background-color: #060815;
     overflow: hidden;
     max-height:50px;
     min-height:50px;
@@ -59,15 +58,13 @@
         max-height:100vh !important;
         z-index:997;
         min-height:50px;
+    
     }
 
     #logo2{
         display:none;
     }
-  }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 768px) {
+ 
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -80,42 +77,33 @@
       text-align: left;
     }
 
-      #logo2{
-        position:absolute;
-        top:0;
-        max-height:10vh;
-        margin:auto;
-        z-index:999;
-      }
+      
+    .hero-text{
+        padding-top:10vh;
+        text-align:center;
+    }
+      
+
+    .logo-1 { 
+       display:flex;
+       justify-content:center;
+       width:100vw;
+       align-items:center;
+    }
+
+    .logo-1 img{
+    width:100% !important;
+
+    }
 
 
-      .hero-text h1{
-          font-size:2.3em !important;
-          top:150px !important;
-          width:100vw;
-         left:0 !important;
-         text-align:center !important;
-      }
-
-      .hero-text h2{
-        
-        font-size:1.8em !important;
-        top:200px !important ;
+    .hero-image{
+        height:100vh;
         width:100vw;
-        left:0 !important;
-        text-align:center !important;
+        display:flex;
+        flex-direction:column !important;
+        justify-content:flex-start !important;
     }
-
-    .logo-1 img{ 
-        max-width:70vw !important;
-        min-width:70vw;
-        position:absolute;
-        z-index:500;
-        top:220px !important;
-        Left:15vw !important; 
-        height:auto !important;
-    }
-
     }
 
 
@@ -129,36 +117,29 @@
 
 .logo-1 img{ 
     max-width:130px;
-    position:absolute;
-    z-index:500;
-    top:326px;
-    left:25px; 
-    height:130px;
 }
 
 .hero-text h1{
     Font-family:Ubuntu;
-    position:absolute;
-    z-index:500;
     color:white;
-    top:330px;
     font-size:4em;
-    left:165px;
     text-shadow:1px 1px 10px black;
 }
 
 .hero-text h2{
     Font-family:Titillium web;
-    position:absolute;
-    z-index:500;
     color:rgb(255, 226, 188);
-    top:390px;
     font-size:3em;
-    left:165px;
-    text-shadow:1px 1px 10px black;
+    text-shadow:0px 0px 10px black;
 }
 
+
+
 .hero-image{
+    flex-direction:row-reverse;
+    justify-content:flex-end;
+    align-items:center;
+    display:flex;
     position:absolute;
     top:0;
     height:100vh;
